@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/rounded_corner">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="noun"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/my_primary"
+        android:id="@+id/part_of_speech_textview"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="definition"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="example"
+        android:id="@+id/definition_textview"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Synoyms"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:id="@+id/synonyms_title_textview"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="example"
+        android:id="@+id/synonyms_textview"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Antonyms"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:id="@+id/antonyms_title_textview"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="example"
+        android:id="@+id/antonyms_textview"/>
+
+</LinearLayout>

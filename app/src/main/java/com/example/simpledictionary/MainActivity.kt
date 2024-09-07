@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
                 runOnUiThread {
                     setInProgress(false)
-                    Toast.makeText(applicationContext, "Your message", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "Please enter a valid word", Toast.LENGTH_SHORT).show()
                 }
 
 

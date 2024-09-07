@@ -63,8 +63,19 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }catch (e: Exception){
-                setInProgress(false)
-                Toast.makeText(applicationContext,"Something went wrong", Toast.LENGTH_SHORT).show()
+
+//               try {
+//                   setInProgress(false)
+//               } catch (e: Exception){
+//
+//                   println("Error: ${e.message}")
+//               }
+
+                runOnUiThread {
+                    setInProgress(false)
+                    Toast.makeText(applicationContext, "Your message", Toast.LENGTH_SHORT).show()
+                }
+
 
 
             }
@@ -90,7 +101,8 @@ class MainActivity : AppCompatActivity() {
 
         }
         else{    binding.progressBar.visibility = View.INVISIBLE
-            binding.searchBtn.visibility = View.VISIBLE}
+           binding.searchBtn.visibility = View.VISIBLE
+        }
 
 
 
